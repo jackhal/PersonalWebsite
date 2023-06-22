@@ -5,6 +5,8 @@ import AboutPage from './Pages/AboutPage.js'
 import ExperiencePage from './Pages/ExperiencePage.js'
 import ContactPage from './Pages/ContactPage.js'
 import ResumePage from './Pages/ResumePage.js';
+import Header from './Header.js';
+import Footer from './Footer.js';
 import './App.css';
 
 function App() {
@@ -13,11 +15,11 @@ function App() {
     <div style={{ backgroundColor: '#494D5F' }}>
       <BrowserRouter>
         <Routes>
-            <Route index element={ <HomePage /> } />
-            <Route path="/about" element={ <AboutPage /> } />
-            <Route path="/experience" element={ <ExperiencePage /> } />
-            <Route path="/contact" element={ <ContactPage /> } />
-            <Route path="/resume" element={ <ResumePage /> } />
+            <Route index element={ <div><Header /><HomePage /><Footer /></div> } />
+            <Route path="/about" element={ <div><Header /><AboutPage /><Footer /></div> } />
+            <Route path="/experience" element={ <div><Header /><ExperiencePage /><Footer /></div> } />
+            <Route path="/contact" element={ <div><Header /><ContactPage /><Footer /></div> } />
+            <Route path="/resume" element={ <div><Header /><ResumePage /><Footer /></div> } />
         </Routes>
       </BrowserRouter>
     </div>

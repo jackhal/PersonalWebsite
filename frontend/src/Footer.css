@@ -1,0 +1,6 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 99.9%;
+    box-sizing: border-box;
+}

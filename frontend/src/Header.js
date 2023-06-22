@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { requirePropFactory } from '@mui/material';
 
 export default function Header() {
 
@@ -20,24 +21,24 @@ export default function Header() {
             <AppBar position="static" color="transparent">
                 <Toolbar>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Button onClick={() => routeChange('/')}><img src="./img/jh-high-resolution-color-logo.png" /></Button>
+                        <Button disableRipple='true' onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("./img/jh-high-resolution-color-logo.png")} /></Button>
                     </Box>
-                    <Button onClick={() => routeChange('/about')}>
+                    <Button disableRipple='true' onClick={() => routeChange('/about')}>
                         <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                             About
                         </Typography>
                     </Button>
-                    <Button onClick={() => routeChange('/experience')}>
+                    <Button disableRipple='true' onClick={() => routeChange('/experience')}>
                         <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                             Experience
                         </Typography>
                     </Button>
-                    <Button onClick={() => routeChange('/contact')}>
+                    <Button disableRipple='true' onClick={() => routeChange('/contact')}>
                         <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                             Contact
                         </Typography>
                     </Button>
-                    <Button onClick={() => routeChange('/resume')}>
+                    <Button disableRipple='true' onClick={() => routeChange('/resume')}>
                         <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                             Resume
                         </Typography>
