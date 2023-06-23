@@ -7,24 +7,37 @@ export default function HomePage() {
         <div>
             <Box height="5vh" sx={{ flexGrow: 1 }}></Box>
             <Box height="85vh" sx={{ flexGrow: 1 }}>
-                <Typography variant="h5" align="center" style={{ color: '#A0D2EB', textTransform: 'none' }}>
-                    Hi, my name is
-                </Typography>
-                <Typography variant="h1" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                    Jack Hale.
-                </Typography>
-                <Typography variant="h3" align="center" style={{ color: '#E5EAF5', textTransform: 'none' }}>
-                    And I like to build stuff.
-                </Typography>
-                <Typography variant="body1" align="center" style={{ color: '#E5EAF5', textTransform: 'none' }}>
-                    I'm a software engineer and accomplished leader, experienced in solving complex problems collaboratively.
-                </Typography>
-                <Typography variant="body1" align="center" style={{ color: '#E5EAF5', textTransform: 'none' }}>
-                    I'm committed to delivering excellent results, while working to create an inclusive, growth-oriented atmosphere.
-                </Typography>
-                <Typography variant="h3" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                    Get to know me:
-                </Typography>
+                <Box height="10vh" sx={{ flexGrow: 1 }}></Box>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
+                    <Box sx={{ width: '16%' }}></Box>
+                    <Typography variant="h5"style={{ color: '#A0D2EB', textTransform: 'none' }}>
+                        Hi, my name is
+                    </Typography>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
+                    <Box sx={{ width: '15%' }}></Box>
+                    <Typography variant="h1" align="left" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                        Jack Hale.
+                    </Typography>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
+                    <Box sx={{ width: '15%' }}></Box>
+                    <Typography variant="h3" align="left" style={{ color: '#E5EAF5', textTransform: 'none' }}>
+                        I like to build things.
+                    </Typography>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
+                    <Box sx={{ width: '15%' }}></Box>
+                    <Typography variant="body1" align="left" style={{ color: '#E5EAF5', textTransform: 'none' }}>
+                        I'm a software engineer and accomplished leader, experienced in solving complex problems collaboratively.
+                    </Typography>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
+                    <Box sx={{ width: '15%' }}></Box>
+                    <Typography variant="body1" align="left" style={{ color: '#E5EAF5', textTransform: 'none' }}>
+                        I'm committed to delivering excellent results, while working to create an inclusive, growth-oriented atmosphere.
+                    </Typography>
+                </div>
             </Box>
         </div>
     );
