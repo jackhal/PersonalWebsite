@@ -14,15 +14,16 @@ export default function Footer() {
     navigate(path);
   }
 
-  const redirect = () => {
-    window.location.href = 'https://github.com/jackhal';
+  const openGitHub = () => {
+    const url = 'https://github.com/jackhal/PersonalWebsite';
+    window.open(url, '_blank');
   }
   
   return (
     <Box height="5vh" sx={{ flexGrow: 1 }}>
         <Box sx={{ flexGrow: 1 }}>
             <div className="button-container">
-                <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => redirect()}>
+                <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openGitHub()}>
                     <GitHubIcon style={{ color: '#D0BDF4'}}/>
                 </Button>
                 <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/other')}>

@@ -38,7 +38,7 @@ export default function OtherFunThings(){
                         </Button>
                         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange(-1)}>
                             <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                                Home Page
+                                Back
                             </Typography>
                         </Button>
                     </div>

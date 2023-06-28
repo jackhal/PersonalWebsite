@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { requirePropFactory } from '@mui/material';
 
 export default function Header() {
 
@@ -21,7 +20,7 @@ export default function Header() {
             <AppBar position="static" color="transparent">
                 <Toolbar>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Button disableRipple='true' onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("./img/jh-high-resolution-color-logo.png")} /></Button>
+                        <Button disableRipple='true' onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
                     </Box>
                     <Button disableRipple='true' onClick={() => routeChange('/about')}>
                         <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>

@@ -2,7 +2,7 @@ import ReactModal from 'react-modal';
 import React from 'react';
 import Button from '@mui/material/Button';
  
-function PopUp({ isOpen, setIsOpen }) {
+function PopUpEmail({ isOpen, setIsOpen }) {
 
     const closeModal = () => {
         setIsOpen(false);
@@ -13,6 +13,11 @@ function PopUp({ isOpen, setIsOpen }) {
           width: '40vw',
           height: '40vh',
           margin: 'auto',
+          backgroundColor: '#494D5F',
+          border: '1px solid #D0BDF4',
+        },
+        overlay: {
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
         },
     };
 
@@ -26,4 +31,4 @@ function PopUp({ isOpen, setIsOpen }) {
     );
 }
  
-export default PopUp;
+export default PopUpEmail;

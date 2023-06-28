@@ -6,8 +6,8 @@ import ExperiencePage from './Pages/ExperiencePage.js'
 import ContactPage from './Pages/ContactPage.js'
 import ResumePage from './Pages/ResumePage.js';
 import OtherFunThings from './OtherFunThings/OtherFunThings.js'
-import Header from './Header.js';
-import Footer from './Footer.js';
+import Header from './Components/Header.js';
+import Footer from './Components/Footer.js';
 import './App.css';
 
 function App() {
