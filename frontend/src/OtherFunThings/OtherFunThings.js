@@ -2,8 +2,9 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
-import React from 'react';
+import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 export default function OtherFunThings(){
 
@@ -35,7 +36,7 @@ export default function OtherFunThings(){
                         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => redirect()}>
                             <GitHubIcon style={{ color: '#D0BDF4'}}/>
                         </Button>
-                        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/')}>
+                        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange(-1)}>
                             <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                                 Home Page
                             </Typography>
