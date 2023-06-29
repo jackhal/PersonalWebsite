@@ -3,7 +3,6 @@ import Typography from '@mui/material/Typography';
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from "@mui/material/IconButton";
@@ -34,9 +33,6 @@ export default function ContactPage() {
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <IconButton onClick={openModal}>
                         <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-                    </IconButton>
-                    <IconButton>
-                        <PhoneIcon style={{ color: '#D0BDF4' }} fontSize="large" />
                     </IconButton>
                     <IconButton>
                         <LinkedInIcon style={{ color: '#D0BDF4' }} fontSize="large" />

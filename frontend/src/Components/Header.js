@@ -15,36 +15,34 @@ export default function Header() {
   }
 
   return (
-    <div>
-        <Box height="5vh" sx={{ flexGrow: 1 }}>
-            <AppBar position="static" color="transparent">
-                <Toolbar>
-                    <Box sx={{ flexGrow: 1 }}>
-                        <Button disableRipple='true' onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
-                    </Box>
-                    <Button disableRipple='true' onClick={() => routeChange('/about')}>
-                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                            About
-                        </Typography>
-                    </Button>
-                    <Button disableRipple='true' onClick={() => routeChange('/experience')}>
-                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                            Experience
-                        </Typography>
-                    </Button>
-                    <Button disableRipple='true' onClick={() => routeChange('/contact')}>
-                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                            Contact
-                        </Typography>
-                    </Button>
-                    <Button disableRipple='true' onClick={() => routeChange('/resume')}>
-                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                            Resume
-                        </Typography>
-                    </Button>
-                </Toolbar>
-            </AppBar>
-        </Box>
-    </div>
+    <Box height="5vh" sx={{ flexGrow: 1 }}>
+        <AppBar position="static" color="transparent">
+            <Toolbar>
+                <Box sx={{ flexGrow: 1 }}>
+                    <Button disableRipple='true' onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
+                </Box>
+                <Button disableRipple='true' onClick={() => routeChange('/about')}>
+                    <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                        About
+                    </Typography>
+                </Button>
+                <Button disableRipple='true' onClick={() => routeChange('/experience')}>
+                    <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                        Experience
+                    </Typography>
+                </Button>
+                <Button disableRipple='true' onClick={() => routeChange('/contact')}>
+                    <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                        Contact
+                    </Typography>
+                </Button>
+                <Button disableRipple='true' onClick={() => routeChange('/resume')}>
+                    <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                        Resume
+                    </Typography>
+                </Button>
+            </Toolbar>
+        </AppBar>
+    </Box>
   );
 }
