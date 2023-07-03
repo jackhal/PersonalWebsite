@@ -18,8 +18,7 @@ export default function Footer() {
     navigate(path);
   }
 
-  const openGitHub = () => {
-    const url = 'https://github.com/jackhal/PersonalWebsite';
+  const openURL = (url) => {
     window.open(url, '_blank');
   }
 
@@ -32,7 +31,7 @@ export default function Footer() {
   return (
     <Box height="5vh" minHeight="35px" display="flex" justifyContent="space-between">
       <div className='left'>
-        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openGitHub()}>
+        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openURL('https://github.com/jackhal/PersonalWebsite')}>
             <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                 This site on{'\u00A0'}
             </Typography>
@@ -43,16 +42,16 @@ export default function Footer() {
           <IconButton onClick={openModal}>
               <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={ () => openURL('https://www.linkedin.com/in/jackhale23/') }>
               <LinkedInIcon style={{ color: '#D0BDF4' }} fontSize="large" />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={ () => openURL('https://github.com/jackhal') }>
               <GitHubIcon style={{ color: '#D0BDF4' }} fontSize="large" />
           </IconButton>
           <PopUpEmail isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       <div className='right'>
-        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/other')}>
+        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/PersonalWebsite/other')}>
             <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                 Other fun things
             </Typography>

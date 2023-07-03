@@ -19,19 +19,19 @@ export default function Header() {
         <AppBar position="static" color="transparent">
             <Toolbar>
                 <Box sx={{ flexGrow: 1 }}>
-                    <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
+                    <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
                 </Box>
-                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/about')}>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite/about')}>
                     <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                         About
                     </Typography>
                 </Button>
-                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/experience')}>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite/experience')}>
                     <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                         Experience
                     </Typography>
                 </Button>
-                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/resume')}>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite/resume')}>
                     <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                         Resume
                     </Typography>

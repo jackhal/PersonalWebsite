@@ -15,11 +15,11 @@ function App() {
     <div style={{ backgroundColor: '#494D5F' }}>
       <BrowserRouter>
         <Routes>
-            <Route index element={ <div><Header /><HomePage /><Footer /></div> } />
-            <Route path="/about" element={ <div><Header /><AboutPage /><Footer /></div> } />
-            <Route path="/experience" element={ <div><Header /><ExperiencePage /><Footer /></div> } />
-            <Route path="/resume" element={ <div><Header /><ResumePage /><Footer /></div> } />
-            <Route path="/other" element={ <OtherFunThings /> } />
+            <Route path="/PersonalWebsite" element={ <div><Header /><HomePage /><Footer /></div> } />
+            <Route path="/PersonalWebsite/about" element={ <div><Header /><AboutPage /><Footer /></div> } />
+            <Route path="/PersonalWebsite/experience" element={ <div><Header /><ExperiencePage /><Footer /></div> } />
+            <Route path="/PersonalWebsite/resume" element={ <div><Header /><ResumePage /><Footer /></div> } />
+            <Route path="/PersonalWebsite/other" element={ <OtherFunThings /> } />
         </Routes>
       </BrowserRouter>
     </div>

@@ -76,7 +76,7 @@ export default function ExperiencePage() {
                         </Typography>
                     </div>
                 </Box>
-                <Box height="2vh" sx={{ flexGrow: 1 }} />
+                <Box height="5vh" sx={{ flexGrow: 1 }} />
             </Box>
         </div>
     );

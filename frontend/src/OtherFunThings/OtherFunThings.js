@@ -6,7 +6,6 @@ import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import { CenterFocusStrong } from '@material-ui/icons';
 
 
 export default function OtherFunThings(){
