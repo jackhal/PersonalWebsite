@@ -44,6 +44,9 @@ export default function OtherFunThings(){
                 <Box sx={{ flexGrow: 1 }}>
                     <div className="button-container">
                         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => redirect()}>
+                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                            This site on{'\u00A0'}
+                        </Typography>
                             <GitHubIcon style={{ color: '#D0BDF4'}}/>
                         </Button>
                         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange(-1)}>
