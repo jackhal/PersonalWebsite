@@ -29,34 +29,36 @@ export default function Footer() {
   };
   
   return (
-    <Box height="5vh" minHeight="35px" display="flex" justifyContent="space-between">
-      <div className='left'>
-        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openURL('https://github.com/jackhal/PersonalWebsite')}>
-            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                This site on{'\u00A0'}
-            </Typography>
-            <GitHubIcon style={{ color: '#D0BDF4'}}/>
-        </Button>
-      </div>
-      <div className='middle'>
-          <IconButton onClick={openModal}>
-              <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-          </IconButton>
-          <IconButton onClick={ () => openURL('https://www.linkedin.com/in/jackhale23/') }>
-              <LinkedInIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-          </IconButton>
-          <IconButton onClick={ () => openURL('https://github.com/jackhal') }>
-              <GitHubIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-          </IconButton>
-          <PopUpEmail isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
-      <div className='right'>
-        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/PersonalWebsite/other')}>
-            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                Other fun things
-            </Typography>
-        </Button>
-      </div>
-    </Box>
+    <div style={{ position: "absolute", bottom: 0, width: '100%' }}>
+      <Box display="flex" justifyContent="space-between">
+        <div className='left'>
+          <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openURL('https://github.com/jackhal/PersonalWebsite')}>
+              <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                  This site on{'\u00A0'}
+              </Typography>
+              <GitHubIcon style={{ color: '#D0BDF4'}}/>
+          </Button>
+        </div>
+        <div className='middle'>
+            <IconButton onClick={openModal}>
+                <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
+            </IconButton>
+            <IconButton onClick={ () => openURL('https://www.linkedin.com/in/jackhale23/') }>
+                <LinkedInIcon style={{ color: '#D0BDF4' }} fontSize="large" />
+            </IconButton>
+            <IconButton onClick={ () => openURL('https://github.com/jackhal') }>
+                <GitHubIcon style={{ color: '#D0BDF4' }} fontSize="large" />
+            </IconButton>
+            <PopUpEmail isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
+        <div className='right'>
+          <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/PersonalWebsite/other')}>
+              <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                  Other fun things
+              </Typography>
+          </Button>
+        </div>
+      </Box>
+    </div>
   );
 }

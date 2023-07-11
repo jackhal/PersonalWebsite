@@ -1,13 +1,15 @@
-import Box from '@mui/material/Box'
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import './HomePage.css';
 
 export default function HomePage() {
     
     return (
-        <div>
-            <Box height="5vh" sx={{ flexGrow: 1 }}></Box>
-            <Box height="85vh" sx={{ flexGrow: 1 }}>
+        <div className="content">
+            <Box minHeight="85vh" sx={{ flexGrow: 1 }}>
                 <Box height="10vh" sx={{ flexGrow: 1 }}></Box>
                 <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
                     <Box sx={{ width: '15%' }}></Box>
