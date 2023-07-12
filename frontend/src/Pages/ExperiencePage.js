@@ -1,17 +1,15 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import './HomePage.css';
 
 export default function ExperiencePage() {
     return (
-        <div>
-            <Box height="5vh" sx={{ flexGrow: 1 }}/>
-            <Box height="85vh" sx={{ flexGrow: 1 }}>
+        <div className="content">
+            <Box minHeight='calc(85vh - 64px)' sx={{ flexGrow: 1 }}>
                 <Typography variant="h2" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                     Experience
                 </Typography>
-                <Box height="3vh" sx={{ flexGrow: 1 }} />
-                <Box height="28vh" sx={{ flexGrow: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
                         <Typography variant="body5" align="left" style={{ color: '#D0BDF4', textTransform: 'none', paddingLeft: '15%' }}>
                             Baylor University,{'\u00A0'}
@@ -45,8 +43,6 @@ export default function ExperiencePage() {
                             ● Developed a visualization tool to showcase service dependency graphs and system context insights derived from the language-agnostic microservice intermediate representations effectively
                         </Typography>
                     </div>
-                </Box>
-                <Box height="35vh" sx={{ flexGrow: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'left' }}>
                         <Typography variant="body5" align="left" style={{ color: '#D0BDF4', textTransform: 'none', paddingLeft: '15%' }}>
                             Omni Interactions,{'\u00A0'}
@@ -75,8 +71,6 @@ export default function ExperiencePage() {
                             • Focused on ease of use, clarity, and a streamlined experience for applicants to increase yield
                         </Typography>
                     </div>
-                </Box>
-                <Box height="5vh" sx={{ flexGrow: 1 }} />
             </Box>
         </div>
     );
