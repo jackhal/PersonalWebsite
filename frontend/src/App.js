@@ -14,15 +14,13 @@ function App() {
   return (
     <BrowserRouter>
       <div style={{ backgroundColor: '#494D5F', minHeight: '100vh' }}>
-        <Header />
         <Routes>
-          <Route path="/PersonalWebsite" element={<HomePage />} />
-          <Route path="/PersonalWebsite/about" element={<AboutPage />} />
-          <Route path="/PersonalWebsite/experience" element={<ExperiencePage />} />
-          <Route path="/PersonalWebsite/resume" element={<ResumePage />} />
+          <Route path="/PersonalWebsite" element={<div><Header /><HomePage /><Footer /></div>} />
+          <Route path="/PersonalWebsite/about" element={<div><Header /><AboutPage /><Footer /></div>} />
+          <Route path="/PersonalWebsite/experience" element={<div><Header /><ExperiencePage /><Footer /></div>} />
+          <Route path="/PersonalWebsite/resume" element={<div><Header /><ResumePage /><Footer /></div>} />
           <Route path="/PersonalWebsite/other" element={<OtherFunThings />} />
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
   );
