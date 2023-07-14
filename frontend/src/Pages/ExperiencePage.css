@@ -15,7 +15,31 @@
 .text {
     color: #E5EAF5;
     text-transform: none;
-    padding-left: 17.5%;
-    padding-right: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 0;
+}
+
+.jobTitle {
+    color: #D0BDF4;
+    text-transform: none;
+    padding-left: 22.5%;
+    padding-right: 25%;
+    margin: 0;
+    margin-top: 0;
+}
+
+.company {
+    color: #D0BDF4;
+    text-transform: none;
+    padding-left: 22.5%;
+    margin: 0;
+    margin-top: 3vh;
+}
+
+.location {
+    color: #E5EAF5;
+    text-transform: none;
+    padding-right: 25%;
     margin: 0;
 }
