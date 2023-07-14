@@ -3,3 +3,19 @@
     top: 0;
     right: 0;
 }
+
+.popUpContent {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.labels {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 24px;
+}

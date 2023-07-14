@@ -41,11 +41,13 @@ function PopUpEmail({ isOpen, setIsOpen }) {
     return (
       <ReactModal width="40vw" isOpen={ isOpen } style={ modalStyle }>
         
-        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-          Use the buttons below to start a draft on either service which will be forwarded to my personal email.
-        </Typography>
+        <div className="popUpContent">
+          <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+            Use the buttons below to start a draft on either service which will be forwarded to my personal email.
+          </Typography>
+        </div>
         
-        <div>
+        <div className="labels">
           <Button onClick= { () => openGmailDraft("test@gmail.com") }>
             <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
               Gmail
@@ -59,7 +61,7 @@ function PopUpEmail({ isOpen, setIsOpen }) {
         </div>
 
 
-        <div>
+        <div className="icons">
           <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
           <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
         </div>
