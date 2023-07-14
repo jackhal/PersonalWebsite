@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import './HomePage.css';
+import './ExperiencePage.css';
 
 export default function ExperiencePage() {
     return (

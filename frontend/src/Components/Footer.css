@@ -1,17 +1,10 @@
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 99.9%;
-    box-sizing: border-box;
-}
-
 .left {
     left: 0;
 }
 
 .middle {
     left: 50%;
-    margin-top: -1.5vh;
+    margin-top: -13px;
 }
 
 .right {

@@ -1,0 +1,24 @@
+.content {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    top: 48px;
+    bottom: 48px;
+    max-height: calc(85vh - 64px);
+}
+
+.right {
+    margin-left: 1px;
+}
+
+.left {
+    margin-right: 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 99.9%;
+    box-sizing: border-box;
+    margin-top: -38px;
+}
