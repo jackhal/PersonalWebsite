@@ -6,3 +6,16 @@
     bottom: 48px;
     max-height: calc(85vh - 64px);
 }
+
+.container {
+    display: flex;
+    align-items: baseline;
+}
+
+.text {
+    color: #E5EAF5;
+    text-transform: none;
+    padding-left: 17.5%;
+    padding-right: 30%;
+    margin: 0;
+}
