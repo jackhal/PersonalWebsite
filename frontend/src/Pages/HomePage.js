@@ -10,7 +10,7 @@ export default function HomePage() {
     const { headerHeight } = useContext(HeaderContext);
     const { footerHeight } = useContext(FooterContext);
 
-    const contentStyle = {
+    const homePageContent = {
         overflowY: 'auto',
         position: 'fixed',
         top: headerHeight,
@@ -20,7 +20,7 @@ export default function HomePage() {
     };
 
     return (
-        <div style={contentStyle}>
+        <div style={homePageContent}>
             <Box height="15svh" />
             <div style={{ display: 'flex', alignItems: 'baseline', marginLeft: 'calc(max(50px, 15vw))' }}>
                 <Typography variant="h5"style={{ color: '#A0D2EB', textTransform: 'none' }}>

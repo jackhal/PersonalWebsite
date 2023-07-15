@@ -4,7 +4,7 @@ import HomePage from './Pages/HomePage.js'
 import AboutPage from './Pages/AboutPage.js'
 import ExperiencePage from './Pages/ExperiencePage.js'
 import ResumePage from './Pages/ResumePage.js';
-import OtherFunThings from './OtherFunThings/OtherFunThings.js'
+import OtherFunThings from './Pages/OtherFunThings.js'
 import Header from './Components/Header.js';
 import Footer from './Components/Footer.js';
 import './App.css';
