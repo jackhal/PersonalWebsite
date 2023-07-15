@@ -14,14 +14,14 @@ export default function HomePage() {
         overflowY: 'auto',
         position: 'fixed',
         top: headerHeight,
+        bottom: footerHeight,
         width: '100%',
-        height: `calc(100vh - ${headerHeight}px)`,
+        height: `calc(100vh - ${headerHeight}px - ${footerHeight}px - 5px)`,
     };
 
     return (
         <div style={contentStyle}>
             <Box height="15vh" />
-            <p>footer height is: {footerHeight}px</p>
             <div style={{ display: 'flex', alignItems: 'baseline', marginLeft: 'calc(max(50px, 15vw))' }}>
                 <Typography variant="h5"style={{ color: '#A0D2EB', textTransform: 'none' }}>
                     Hi, my name is
