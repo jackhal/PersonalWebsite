@@ -16,7 +16,7 @@ export default function HomePage() {
         top: headerHeight,
         bottom: footerHeight,
         width: '100%',
-        height: `calc(100vh - ${headerHeight}px - ${footerHeight}px - 5px)`,
+        height: `calc(100svh - ${headerHeight}px - ${footerHeight}px - 5px)`,
     };
 
     return (
