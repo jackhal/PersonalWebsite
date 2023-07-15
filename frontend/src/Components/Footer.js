@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useContext, useEffect } from "react";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -9,8 +9,30 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from "@mui/material/IconButton";
 import PopUpEmail from '../Components/PopUpEmail';
+import { FooterContext } from '../Contexts/FooterContext.js';
 
 export default function Footer() {
+
+  const footerRef = useRef();
+  const { setFooterHeight } = useContext(FooterContext);
+
+  useEffect(() => {
+    const resizeObserver = new ResizeObserver(entries => {
+      for(let entry of entries) {
+        setFooterHeight(entry.contentRect.height);
+      }
+    });
+
+    if(footerRef.current) {
+      resizeObserver.observe(footerRef.current);
+    }
+
+    return () => {
+      if(footerRef.current) {
+        resizeObserver.unobserve(footerRef.current);
+      }
+    };
+  }, [setFooterHeight]);
 
   let navigate = useNavigate(); 
 
@@ -29,7 +51,8 @@ export default function Footer() {
   };
   
   return (
-    <div className="footerBar">
+    <div className="footerBar" ref={ footerRef }>
+      <div className="leftAndMiddle">
       <div className='left'>
         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openURL('https://github.com/jackhal/PersonalWebsite')}>
           <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
@@ -49,6 +72,7 @@ export default function Footer() {
           <GitHubIcon style={{ color: '#D0BDF4' }} fontSize="large" />
         </IconButton>
         <PopUpEmail isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
       </div>
       <div className='right'>
         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/PersonalWebsite/other')}>

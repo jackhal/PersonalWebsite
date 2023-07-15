@@ -2,11 +2,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import React, { useContext } from "react";
 import { HeaderContext } from "../Contexts/HeaderContext.js";
+import { FooterContext } from "../Contexts/FooterContext.js";
 import './HomePage.css';
 
 export default function HomePage() {
 
     const { headerHeight } = useContext(HeaderContext);
+    const { footerHeight } = useContext(FooterContext);
 
     const contentStyle = {
         overflowY: 'auto',
@@ -18,6 +20,8 @@ export default function HomePage() {
 
     return (
         <div style={contentStyle}>
+            <Box height="15vh" />
+            <p>footer height is: {footerHeight}px</p>
             <div style={{ display: 'flex', alignItems: 'baseline', marginLeft: 'calc(max(50px, 15vw))' }}>
                 <Typography variant="h5"style={{ color: '#A0D2EB', textTransform: 'none' }}>
                     Hi, my name is
