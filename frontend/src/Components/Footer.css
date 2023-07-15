@@ -9,6 +9,7 @@
 .right {
     margin-right: 1px;
     bottom: 0;
+    margin-bottom: 1px;
 }
 
 .footerBar {
@@ -37,6 +38,7 @@
 
     .left {
         order: 2;
+        margin-bottom: 1px;
     }
 
     .middle {

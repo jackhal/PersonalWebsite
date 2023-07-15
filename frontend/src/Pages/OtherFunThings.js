@@ -1,11 +1,10 @@
-import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 import React from 'react';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
+import Footer from '../Components/Footer.js'
 import './OtherFunThings.css';
 
 
@@ -25,6 +24,7 @@ export default function OtherFunThings(){
         <div>
             <AppBar position="static" color="transparent">
                 <Toolbar>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
                 <div style={{ display: 'flex', alignItems: 'baseline', flex: 1, justifyContent: 'center' }}>
                     <Typography variant="h3" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                         Other Fun Projects
@@ -38,23 +38,7 @@ export default function OtherFunThings(){
             <div className="content">
                 
             </div>
-            <div style={{ position: "absolute", bottom: 0, width: '100%' }}>
-                <Box sx={{ flexGrow: 1 }}>
-                    <div className="button-container">
-                        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => redirect()}>
-                        <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                            This site on{'\u00A0'}
-                        </Typography>
-                            <GitHubIcon style={{ color: '#D0BDF4'}}/>
-                        </Button>
-                        <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange(-1)}>
-                            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                                Back
-                            </Typography>
-                        </Button>
-                    </div>
-                </Box>
-            </div>
+            <Footer />
         </div>
     );
 }
