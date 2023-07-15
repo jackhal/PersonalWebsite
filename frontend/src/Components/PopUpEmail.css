@@ -17,19 +17,10 @@
     font-size: 13px;
 }
 
-.subject {
-    position: absolute;
-    left: 0.5vw;
-    top: calc(36px - 2vh);
-    flex: 1;
-    color: #A0D2EB;
-    font-size: 13px;
-}
-
 .line {
     position: absolute;
     left: 0;
-    top: calc(72px - 2vh);
+    top: 56px;
     width: 100%;
     height: 1px;
     background-color: #D0BDF4;

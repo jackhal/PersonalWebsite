@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div style={{ backgroundColor: '#494D5F', minHeight: '100vh' }}>
+      <div className="animated_gradient">
         <Routes>
           <Route path="/PersonalWebsite" element={<div><Header /><HomePage /><Footer /></div>} />
           <Route path="/PersonalWebsite/about" element={<div><Header /><AboutPage /><Footer /></div>} />
