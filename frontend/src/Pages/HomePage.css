@@ -1,8 +1,0 @@
-.content {
-    flex: 1;
-    overflow-y: auto;
-    position: relative;
-    top: 48px;
-    bottom: 48px;
-    max-height: calc(85vh - 64px);
-}
