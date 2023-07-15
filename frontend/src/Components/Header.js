@@ -36,7 +36,7 @@ export default function Header() {
     }
 
   return (
-    <AppBar ref={appBarRef} position="static" color="transparent">
+    <AppBar ref={appBarRef} position="fixed" color="transparent">
         <Toolbar>
             <Box sx={{ flexGrow: 1 }}>
                 <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>

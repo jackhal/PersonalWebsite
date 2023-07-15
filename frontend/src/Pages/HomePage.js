@@ -16,12 +16,12 @@ export default function HomePage() {
         top: headerHeight,
         bottom: footerHeight,
         width: '100%',
-        height: `calc(100svh - ${headerHeight}px - ${footerHeight}px - 5px)`,
+        height: `calc(100svh - ${headerHeight}px - ${footerHeight}px - 10px)`,
     };
 
     return (
         <div style={contentStyle}>
-            <Box height="15vh" />
+            <Box height="15svh" />
             <div style={{ display: 'flex', alignItems: 'baseline', marginLeft: 'calc(max(50px, 15vw))' }}>
                 <Typography variant="h5"style={{ color: '#A0D2EB', textTransform: 'none' }}>
                     Hi, my name is

@@ -8,10 +8,11 @@
 
 .right {
     margin-right: 1px;
+    bottom: 0;
 }
 
 .footerBar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -48,6 +49,5 @@
     .right {
         position: absolute;
         right: 0;
-        bottom: 0;
     }
 }

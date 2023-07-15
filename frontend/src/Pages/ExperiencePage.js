@@ -5,7 +5,7 @@ import './ExperiencePage.css';
 
 export default function ExperiencePage() {
     return (
-        <div className="content">
+        <div className="experienceContent">
             <Box minHeight='calc(85vh - 64px)' sx={{ flexGrow: 1 }}>
                 <Typography variant="h2" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                     Experience

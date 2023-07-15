@@ -2,8 +2,10 @@
   background: linear-gradient(90deg, #181717, #4014a1);
   background-size: 400% 400%;
   animation: gradient_anim 50s ease infinite;
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
+  background-attachment: fixed;
+  position: fixed;
 }
 
 @keyframes gradient_anim {
