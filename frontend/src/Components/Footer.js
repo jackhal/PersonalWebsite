@@ -40,13 +40,13 @@ export default function Footer() {
           </Button>
         </div>
         <div className='middle'>
-            <IconButton onClick={openModal}>
+            <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={openModal}>
                 <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
             </IconButton>
-            <IconButton onClick={ () => openURL('https://www.linkedin.com/in/jackhale23/') }>
+            <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={ () => openURL('https://www.linkedin.com/in/jackhale23/') }>
                 <LinkedInIcon style={{ color: '#D0BDF4' }} fontSize="large" />
             </IconButton>
-            <IconButton onClick={ () => openURL('https://github.com/jackhal') }>
+            <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={ () => openURL('https://github.com/jackhal') }>
                 <GitHubIcon style={{ color: '#D0BDF4' }} fontSize="large" />
             </IconButton>
             <PopUpEmail isOpen={isOpen} setIsOpen={setIsOpen} />

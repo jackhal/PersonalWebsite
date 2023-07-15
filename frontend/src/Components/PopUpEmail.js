@@ -2,7 +2,9 @@ import ReactModal from 'react-modal';
 import React from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import CloseIcon from '@mui/icons-material/Close';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import IconButton from '@mui/material/IconButton';
 import './PopUpEmail.css';
  
 function PopUpEmail({ isOpen, setIsOpen }) {
@@ -27,8 +29,8 @@ function PopUpEmail({ isOpen, setIsOpen }) {
 
     const modalStyle = {
       content: {
-        width: '40vw',
-        height: '40vh',
+        width: '50vw',
+        height: '50vh',
         margin: 'auto',
         backgroundColor: '#494D5F',
         border: '1px solid #D0BDF4',
@@ -40,38 +42,19 @@ function PopUpEmail({ isOpen, setIsOpen }) {
 
     return (
       <ReactModal width="40vw" isOpen={ isOpen } style={ modalStyle }>
-        
-        <div className="popUpContent">
-          <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-            Use the buttons below to start a draft on either service which will be forwarded to my personal email.
-          </Typography>
+        <div className="composeHeader">
+          <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="small" />
+          <p className="popUpText">{'\u00A0'}Compose Email</p>
         </div>
-        
-        <div className="labels">
-          <Button onClick= { () => openGmailDraft("test@gmail.com") }>
-            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-              Gmail
-            </Typography>
-          </Button>
-          <Button onClick= { () => openOutlookDraft("test@gmail.com") }>
-            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-              Outlook
-            </Typography>
-          </Button>
+        <div className="subject">
+          <p>Subject:{'\u00A0'}</p>
         </div>
-
-
-        <div className="icons">
-          <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-          <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="large" />
-        </div>
+        <div className="line"></div>
 
         <div className="closeButton">
-          <Button onClick={ closeModal }>
-            <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-              Close
-            </Typography>
-          </Button>
+          <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={ closeModal }>
+            <CloseIcon style={{ color: '#D0BDF4' }} fontSize="small" />
+          </IconButton>
         </div>
       </ReactModal>
     );
