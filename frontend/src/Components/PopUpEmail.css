@@ -1,15 +1,12 @@
-.closeButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .composeHeader {
     display: flex;
     align-items:center;
-    position: absolute;
-    top: -0.5vh;
-    left: 0.5vw;
+    justify-content: space-between;
+    margin-top: -25px;
+    margin-left: -2.5px;
+    margin-bottom: -15px;
+    margin-right: -20px;
+    left: 1vw;
 }
 
 .popUpText {
@@ -17,12 +14,22 @@
     font-size: 13px;
 }
 
-.line {
-    position: absolute;
-    left: 0;
-    top: 56px;
-    width: 100%;
-    height: 1px;
-    background-color: #D0BDF4;
-    flex: 1;
+.subject-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 2vh;
+    color: #fff; /* Change text color as needed */
+    border-bottom: 1px solid #D0BDF4;
+    font-size: 13px;
+    width: calc(100% - 5px);
+}
+
+.content-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    width: calc(100% - 5px);
 }

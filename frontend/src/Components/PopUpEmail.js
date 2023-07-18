@@ -6,6 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import IconButton from '@mui/material/IconButton';
 import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
 import './PopUpEmail.css';
  
 function PopUpEmail({ isOpen, setIsOpen }) {
@@ -44,17 +45,14 @@ function PopUpEmail({ isOpen, setIsOpen }) {
     return (
       <ReactModal width="40vw" isOpen={ isOpen } style={ modalStyle }>
         <div className="composeHeader">
-          <MailOutlineIcon style={{ color: '#D0BDF4' }} fontSize="small" />
           <p className="popUpText">{'\u00A0'}Compose Email</p>
-        </div>
-        <Input placeholder="Ex: Reaching Out" sx={{ width: '100%', fontSize: "13px", top: "1vh" }}/>
-        
-
-        <div className="closeButton">
           <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={ closeModal }>
             <CloseIcon style={{ color: '#D0BDF4' }} fontSize="small" />
           </IconButton>
         </div>
+
+        <input type="text" class="subject-input" placeholder="Subject" />
+        <input type="text" class="content-input" rows="5" placeholder="Content" />
       </ReactModal>
     );
 }
