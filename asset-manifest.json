@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.fb79a41c.css",
-    "main.js": "/PersonalWebsite/static/js/main.fd950b7b.js",
+    "main.css": "/PersonalWebsite/static/css/main.58eaca27.css",
+    "main.js": "/PersonalWebsite/static/js/main.1babd055.js",
     "static/js/787.cda612ba.chunk.js": "/PersonalWebsite/static/js/787.cda612ba.chunk.js",
-    "static/media/JackHale_Resume.pdf": "/PersonalWebsite/static/media/JackHale_Resume.2190746f12d9e1ddc05d.pdf",
-    "static/media/jh-high-resolution-color-logo.png": "/PersonalWebsite/static/media/jh-high-resolution-color-logo.3f85023f5e7a79260ab8.png",
+    "static/media/JackHale_Resume.pdf": "/PersonalWebsite/static/media/JackHale_Resume.b073794f1ff657908396.pdf",
+    "static/media/jh-high-resolution-logo.png": "/PersonalWebsite/static/media/jh-high-resolution-logo.119cb4bad8367e7b692c.png",
     "index.html": "/PersonalWebsite/index.html",
-    "main.fb79a41c.css.map": "/PersonalWebsite/static/css/main.fb79a41c.css.map",
-    "main.fd950b7b.js.map": "/PersonalWebsite/static/js/main.fd950b7b.js.map",
+    "main.58eaca27.css.map": "/PersonalWebsite/static/css/main.58eaca27.css.map",
+    "main.1babd055.js.map": "/PersonalWebsite/static/js/main.1babd055.js.map",
     "787.cda612ba.chunk.js.map": "/PersonalWebsite/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb79a41c.css",
-    "static/js/main.fd950b7b.js"
+    "static/css/main.58eaca27.css",
+    "static/js/main.1babd055.js"
   ]
 }
