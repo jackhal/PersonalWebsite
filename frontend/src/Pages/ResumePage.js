@@ -25,9 +25,8 @@ export default function ResumePage() {
             <Typography variant="h2" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                 My Resume
             </Typography>
-
             <a href={JackHale_Resume} download="JackHale_Resume.pdf" target='_blank'>
-                <Button>Download</Button>
+                <button class="button-85" role="button">Download</button>
             </a>
         </div>
     );

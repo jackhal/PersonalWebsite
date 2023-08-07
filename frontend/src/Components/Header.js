@@ -39,7 +39,7 @@ export default function Header() {
     <AppBar ref={appBarRef} position="fixed" color="transparent">
         <Toolbar>
             <Box sx={{ flexGrow: 1 }}>
-                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-logo.png")} /></Button>
             </Box>
             <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite/about')}>
                 <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>

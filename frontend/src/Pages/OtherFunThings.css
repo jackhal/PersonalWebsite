@@ -5,6 +5,8 @@
     top: 48px;
     bottom: 48px;
     max-height: calc(85vh - 64px);
+    left: 40%;
+    right: 50%;
 }
 
 .right {

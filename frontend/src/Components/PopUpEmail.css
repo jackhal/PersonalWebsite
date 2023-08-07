@@ -3,26 +3,28 @@
     align-items:center;
     justify-content: space-between;
     margin-top: -25px;
-    margin-left: -2.5px;
+    margin-left: -20px;
     margin-bottom: -15px;
     margin-right: -20px;
-    left: 1vw;
+    background-color: #3b415b;
 }
 
 .popUpText {
     color: #D0BDF4;
     font-size: 13px;
+    margin-left: 17.5px;
 }
 
 .subject-input {
     background-color: transparent;
     border: none;
     outline: none;
-    margin-top: 2vh;
+    margin-top: 20px;
     color: #fff; /* Change text color as needed */
     border-bottom: 1px solid #D0BDF4;
     font-size: 13px;
     width: calc(100% - 5px);
+    font-family: inherit;
 }
 
 .content-input {
@@ -32,4 +34,24 @@
     color: #fff;
     font-size: 13px;
     width: calc(100% - 5px);
+    font-family: inherit;
+    resize: none;
+    height: calc(100% - 80px);
+}
+
+.sendButton {
+    border-radius: 20px;
+    padding: 0.5em 1em;
+}
+
+.rounded-button {
+    background-color: #D0BDF4; /* Green background */
+    color: #494D5F; /* White text */
+    padding: 5px 10px; /* Button size */
+    border: none;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    right: 10px;
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
 }

@@ -24,7 +24,7 @@ export default function OtherFunThings(){
         <div>
             <AppBar position="static" color="transparent">
                 <Toolbar>
-                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-color-logo.png")} /></Button>
+                <Button disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={() => routeChange('/PersonalWebsite')}><img alt="" height="50vh" src={require("../img/jh-high-resolution-logo.png")} /></Button>
                 <div style={{ display: 'flex', alignItems: 'baseline', flex: 1, justifyContent: 'center' }}>
                     <Typography variant="h3" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                         Other Fun Projects
@@ -36,7 +36,9 @@ export default function OtherFunThings(){
                 </Toolbar>
             </AppBar>
             <div className="content">
-                
+                <Typography variant="body5" style={{ color: '#D0BDF4', textTransform: 'none' }}>
+                    This page is still under construction
+                </Typography>
             </div>
             <Footer />
         </div>

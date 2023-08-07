@@ -52,7 +52,8 @@ function PopUpEmail({ isOpen, setIsOpen }) {
         </div>
 
         <input type="text" class="subject-input" placeholder="Subject" />
-        <input type="text" class="content-input" rows="5" placeholder="Content" />
+        <textarea type="text" class="content-input" placeholder="Content" />
+        <button className="rounded-button">Send</button>
       </ReactModal>
     );
 }

@@ -2,6 +2,7 @@ import Typography from '@mui/material/Typography';
 import { HeaderContext } from "../Contexts/HeaderContext.js";
 import { FooterContext } from "../Contexts/FooterContext.js";
 import React, { useContext } from 'react';
+import './AboutPage.css';
 
 export default function AboutPage() {
     
