@@ -20,9 +20,7 @@ export default function ExperiencePage() {
     
     return (
         <div style={experiencePageContent}>
-            <Typography variant="h2" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-                Experience
-            </Typography>
+            <p class="experience-header">Experience</p>
             
             <div className="container">
                 <p className="company">Baylor University,{'\u00A0'}</p>

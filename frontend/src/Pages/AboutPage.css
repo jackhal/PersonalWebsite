@@ -1,27 +1,48 @@
-.section-heading {
+.about-content {
+    margin-left: 10%;
+}
 
+.section-heading {
+    margin-top: 5vh;
+    color: white;
 }
 
 .pure-paragraph {
+    color: white;
+}
+
+.tech-section {
+    
+}
+
+.tech-line {
 
 }
 
-.sectional-technology {
+.tech-left {
 
 }
 
-.technology {
+.tech-right {
 
+}
+
+.tech-type {
+    color: white;
+}
+
+.tech-list {
+    color: white;
 }
 
 .school-name {
-
+    color: white;
 }
 
 .school-location {
-
+    color: white;
 }
 
 .date {
-  
+    color: white;
 }

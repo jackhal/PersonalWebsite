@@ -1,3 +1,15 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience-header {
+    color: #D0BDF4;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
 .container {
     display: flex;
     align-items: baseline;
