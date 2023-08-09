@@ -23,32 +23,30 @@ export default function AboutPage() {
             <p class="about-header">About Me</p>
             <div class="about-content">
                 <p class="section-heading">Career Profile</p>
-                <p class="pure-paragraph"> Software engineerand accomplished leader, experienced in solving complex 
+                <p class="pure-paragraph"> Software engineer and accomplished leader, experienced in solving complex 
                     problems collaboratively. Strong foundation in algorithms, data structures, and software design 
                     with a track record of consistently meeting challenging project deadlines in fast-paced, agile 
                     environments. Committed to delivering excellent results, while working to create an inclusive, 
                     growth-oriented atmosphere.
                 </p>
-                <div class="tech-section">
-                    <div class="tech-line">
-                        <div class="tech-left">
-                            <p class="tech-type">Language Fluency:{'\u00A0'}</p>
-                            <p class="tech-list">JavaScript, HTML/CSS, Java, Python, C, C++, Bash</p>
-                        </div>
-                        <div class="tech-right">
-                            <p class="tech-type">Other Technologies:{'\u00A0'}</p>
-                            <p class="tech-list">Git, React, REST, Spring</p>
-                        </div>
+                <div class="tech-line">
+                    <div class="tech-left">
+                        <p class="tech-type">Language Fluency:{'\u00A0'}</p>
+                        <p class="tech-list">JavaScript, HTML/CSS, Java, Python, C, C++, Bash</p>
                     </div>
-                    <div class="tech-line">
-                        <div class="tech-left">
-                            <p class="tech-type">Databases:{'\u00A0'}</p>
-                            <p class="tech-list">MySQL, MariaDB</p>
-                        </div>
-                        <div class="tech-right">
-                            <p class="tech-type">Operating Systems:{'\u00A0'}</p>
-                            <p class="tech-list">Linux, macOS, Windows</p>
-                        </div>
+                    <div class="tech-right">
+                        <p class="tech-type">Other Technologies:{'\u00A0'}</p>
+                        <p class="tech-list">Git, React, REST, Spring</p>
+                    </div>
+                </div>
+                <div class="tech-line">
+                    <div class="tech-left">
+                        <p class="tech-type">Databases:{'\u00A0'}</p>
+                        <p class="tech-list">MySQL, MariaDB</p>
+                    </div>
+                    <div class="tech-right">
+                        <p class="tech-type">Operating Systems:{'\u00A0'}</p>
+                        <p class="tech-list">Linux, macOS, Windows</p>
                     </div>
                 </div>
                 <p class="section-heading">Education</p>

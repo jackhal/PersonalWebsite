@@ -20,6 +20,14 @@
     justify-content: space-between;
     flex-direction: row;
 }
+
+.footer-button-text {
+    color: #D0BDF4;
+    font-size: 1vw;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
   
 .leftAndMiddle {
     display: flex;

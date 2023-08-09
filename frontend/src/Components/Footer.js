@@ -55,9 +55,7 @@ export default function Footer() {
       <div className="leftAndMiddle">
       <div className='left'>
         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => openURL('https://github.com/jackhal/PersonalWebsite')}>
-          <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-            This site on{'\u00A0'}
-          </Typography>
+          <p class="footer-button-text">This site on{'\u00A0'}</p>
           <GitHubIcon style={{ color: '#D0BDF4'}}/>
         </Button>
       </div>
@@ -76,9 +74,7 @@ export default function Footer() {
       </div>
       <div className='right'>
         <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} onClick={() => routeChange('/PersonalWebsite/other')}>
-          <Typography variant="button" style={{ color: '#D0BDF4', textTransform: 'none' }}>
-            Other fun things
-          </Typography>
+          <p class="footer-button-text">Other fun things</p>
         </Button>
       </div>
     </div>
