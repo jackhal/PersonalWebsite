@@ -1,14 +1,29 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-header {
+    color: #D0BDF4;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
 .about-content {
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-right: 17.5%;
 }
 
 .section-heading {
-    margin-top: 5vh;
-    color: white;
+    color: #D0BDF4;
+    margin-bottom: 0;
 }
 
 .pure-paragraph {
     color: white;
+    margin-bottom: 0;
+    margin-top: 1vh;
 }
 
 .tech-section {
@@ -16,19 +31,27 @@
 }
 
 .tech-line {
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .tech-left {
-
+    display: flex;
 }
 
 .tech-right {
+    display: flex;
+}
 
+.tech-left p, .tech-right p {
+    margin: 0;
+    margin-top: 1vh;
 }
 
 .tech-type {
-    color: white;
+    color: #A0D2EB;
 }
 
 .tech-list {
@@ -36,7 +59,7 @@
 }
 
 .school-name {
-    color: white;
+    color: #A0D2EB;
 }
 
 .school-location {
@@ -44,5 +67,29 @@
 }
 
 .date {
+    color: #A0D2EB;
+}
+
+.school-name, .school-location, .date {
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.school-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.school-info {
+    display: flex;
+}
+
+.indent-paragraph {
     color: white;
+    margin-left: 5%;
+    margin-bottom: 0;
+    margin-top: 1vh;
 }
