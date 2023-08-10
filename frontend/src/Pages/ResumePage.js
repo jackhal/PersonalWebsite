@@ -1,6 +1,5 @@
 import Typography from '@mui/material/Typography';
 import React, { useContext } from 'react';
-import JackHale_Resume from "../Files/JackHale_Resume.pdf"
 import Button from '@mui/material/Button';
 import { HeaderContext } from "../Contexts/HeaderContext.js";
 import { FooterContext } from "../Contexts/FooterContext.js";
@@ -25,7 +24,7 @@ export default function ResumePage() {
             <Typography variant="h2" align="center" style={{ color: '#D0BDF4', textTransform: 'none' }}>
                 My Resume
             </Typography>
-            <a href={JackHale_Resume} download="JackHale_Resume.pdf" target='_blank'>
+            <a href="/downloads/JackHale_Resume.pdf" download>
                 <button class="button-85" role="button">Download</button>
             </a>
         </div>

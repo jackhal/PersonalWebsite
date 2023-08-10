@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.abaf6792.css",
-    "main.js": "/PersonalWebsite/static/js/main.eb4eda1e.js",
+    "main.css": "/PersonalWebsite/static/css/main.2fc6336f.css",
+    "main.js": "/PersonalWebsite/static/js/main.6d020afa.js",
     "static/js/787.cda612ba.chunk.js": "/PersonalWebsite/static/js/787.cda612ba.chunk.js",
     "static/media/JackHale_Resume.pdf": "/PersonalWebsite/static/media/JackHale_Resume.eb28f24026aa7485e76e.pdf",
     "static/media/jh-high-resolution-logo.png": "/PersonalWebsite/static/media/jh-high-resolution-logo.119cb4bad8367e7b692c.png",
     "index.html": "/PersonalWebsite/index.html",
-    "main.abaf6792.css.map": "/PersonalWebsite/static/css/main.abaf6792.css.map",
-    "main.eb4eda1e.js.map": "/PersonalWebsite/static/js/main.eb4eda1e.js.map",
+    "main.2fc6336f.css.map": "/PersonalWebsite/static/css/main.2fc6336f.css.map",
+    "main.6d020afa.js.map": "/PersonalWebsite/static/js/main.6d020afa.js.map",
     "787.cda612ba.chunk.js.map": "/PersonalWebsite/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abaf6792.css",
-    "static/js/main.eb4eda1e.js"
+    "static/css/main.2fc6336f.css",
+    "static/js/main.6d020afa.js"
   ]
 }
