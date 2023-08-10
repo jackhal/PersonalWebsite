@@ -11,8 +11,8 @@ body {
 }
 
 .about-content {
-    margin-left: 15%;
-    margin-right: 17.5%;
+    margin-left: 12.5%;
+    margin-right: 15%;
 }
 
 .section-heading {
@@ -26,19 +26,13 @@ body {
     margin-top: 1vh;
 }
 
-.tech-line {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 .tech-left {
     display: flex;
 }
 
 .tech-right {
     display: flex;
+    justify-content: flex-end;
 }
 
 .tech-left p, .tech-right p {
@@ -64,9 +58,11 @@ body {
 
 .date {
     color: #A0D2EB;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.school-name, .school-location, .date {
+.school-name p, .school-location p, .date p {
     margin: 0;
     margin-top: 1vh;
 }
@@ -88,4 +84,23 @@ body {
     margin-left: 5%;
     margin-bottom: 0;
     margin-top: 1vh;
+}
+
+.grid-tech {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+}
+
+.grid-school {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    margin: 0;
+}
+
+.grid-school, .grid-school p, .grid-school .school-name,
+.grid-school .school-location, .grid-school .date {
+    margin: 0;
+    margin-top: 0.5vh;
 }

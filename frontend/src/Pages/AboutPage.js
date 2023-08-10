@@ -29,32 +29,38 @@ export default function AboutPage() {
                     environments. Committed to delivering excellent results, while working to create an inclusive, 
                     growth-oriented atmosphere.
                 </p>
-                <div class="tech-line">
+                <div class="grid-tech">
                     <div class="tech-left">
-                        <p class="tech-type">Language Fluency:{'\u00A0'}</p>
-                        <p class="tech-list">JavaScript, HTML/CSS, Java, Python, C, C++, Bash</p>
+                        <p>
+                            <span class="tech-type">Language Fluency:{'\u00A0'}</span>
+                            <span class="tech-list">JavaScript, HTML/CSS, Java, Python, C, C++, Bash</span>
+                        </p>
                     </div>
                     <div class="tech-right">
-                        <p class="tech-type">Other Technologies:{'\u00A0'}</p>
-                        <p class="tech-list">Git, React, REST, Spring</p>
+                        <p>
+                            <span class="tech-type">Other Technologies:{'\u00A0'}</span>
+                            <span class="tech-list">Git, React, REST, Spring</span>
+                        </p>
                     </div>
-                </div>
-                <div class="tech-line">
                     <div class="tech-left">
-                        <p class="tech-type">Databases:{'\u00A0'}</p>
-                        <p class="tech-list">MySQL, MariaDB</p>
+                        <p>
+                            <span class="tech-type">Databases:{'\u00A0'}</span>
+                            <span class="tech-list">MySQL, MariaDB, MongoDB</span>
+                        </p>
                     </div>
                     <div class="tech-right">
-                        <p class="tech-type">Operating Systems:{'\u00A0'}</p>
-                        <p class="tech-list">Linux, macOS, Windows</p>
+                        <p>
+                            <span class="tech-type">Operating Systems:{'\u00A0'}</span>
+                            <span class="tech-list">Linux, macOS, Windows</span>
+                        </p>
                     </div>
                 </div>
                 <p class="section-heading">Education</p>
-                <div class="school-group">
-                    <div class="school-info">
-                        <p class="school-name">Baylor University,{'\u00A0'}</p>
-                        <p class="school-location">Waco, TX - Bachelor of Science in Computer Science</p>
-                    </div>
+                <div class="grid-school">
+                    <p>
+                        <span class="school-name">Baylor University,{'\u00A0'}</span>
+                        <span class="school-location">Waco, TX - Bachelor of Science in Computer Science</span>
+                    </p>
                     <p class="date">August 2019 - May 2023</p>
                 </div>
                 <p class="indent-paragraph">● Experience leading multiple development teams in academia using agile methodologies</p>
