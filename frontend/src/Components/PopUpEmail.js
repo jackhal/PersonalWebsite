@@ -1,10 +1,13 @@
 import ReactModal from 'react-modal';
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import IconButton from '@mui/material/IconButton';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
 import './PopUpEmail.css';
@@ -42,10 +45,22 @@ function PopUpEmail({ isOpen, setIsOpen }) {
       },
     };
 
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [gmail, setGmail] = useState(true)
+    const open = Boolean(anchorEl);
+
+    const openDropDown = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const closeDropDown = () => {
+      setAnchorEl(null);
+    };
+
     return (
       <ReactModal width="40vw" isOpen={ isOpen } style={ modalStyle }>
-        <div className="composeHeader">
-          <p className="popUpText">{'\u00A0'}Compose Email</p>
+        <div class="composeHeader">
+          <p class="popUpText">{'\u00A0'}Compose Email</p>
           <IconButton disableRipple='true' sx={{"&:hover": {backgroundColor: "transparent", }}} onClick={ closeModal }>
             <CloseIcon style={{ color: '#D0BDF4' }} fontSize="small" />
           </IconButton>
@@ -53,7 +68,25 @@ function PopUpEmail({ isOpen, setIsOpen }) {
 
         <input type="text" class="subject-input" placeholder="Subject" />
         <textarea type="text" class="content-input" placeholder="Content" />
-        <button className="rounded-button">Send</button>
+        <div class="oval-button-container">
+          <button class="rounded-button">Send</button>
+          <IconButton disableRipple='true' class="small-rounded-button" onClick={openDropDown}>
+            <PlayArrowIcon style={{ transform: 'rotate(90deg)', marginTop: '2px'}} fontSize="small" />
+          </IconButton>
+
+
+          <Menu
+            anchorEl={anchorEl}
+            open={open}
+            onClose={closeDropDown}
+            onClick={closeDropDown}
+            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+          >
+            <MenuItem onClick={() => { setGmail(true) }}>Gmail</MenuItem>
+            <MenuItem onClick={() => { setGmail(false) }}>Outlook</MenuItem>
+          </Menu>
+        </div>
       </ReactModal>
     );
 }

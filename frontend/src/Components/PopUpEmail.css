@@ -11,8 +11,10 @@
 
 .popUpText {
     color: #D0BDF4;
-    font-size: 13px;
-    margin-left: 17.5px;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-left: 1vw;
 }
 
 .subject-input {
@@ -39,19 +41,26 @@
     height: calc(100% - 80px);
 }
 
-.sendButton {
-    border-radius: 20px;
-    padding: 0.5em 1em;
+.rounded-button-container {
+    display: flex;
+    align-items: center;
 }
 
 .rounded-button {
-    background-color: #D0BDF4; /* Green background */
-    color: #494D5F; /* White text */
-    padding: 5px 10px; /* Button size */
+    background-color: #D0BDF4;
+    color: #494D5F;
+    padding: 5px 10px;
     border: none;
-    margin-top: 5px;
-    margin-bottom: -10px;
-    right: 10px;
     border-top-left-radius: 20px; /* Rounded top-left corner */
     border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+}
+
+.small-rounded-button {
+    background-color: #D0BDF4;
+    padding: 0px 2px 0px 0px;
+    position: absolute;
+    border: none;
+    margin-left: 1px;
+    border-top-right-radius: 20px; /* Rounded top-right corner */
+    border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
 }
