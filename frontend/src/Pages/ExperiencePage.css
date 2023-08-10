@@ -10,24 +10,21 @@ body {
     margin-bottom: -5px;
 }
 
-.container {
-    display: flex;
-    align-items: baseline;
+p,.company, .location {
+    margin: 0;
+    margin-top: 10px;
 }
 
 .text {
     color: #E5EAF5;
     text-transform: none;
-    padding-left: 17.5%;
-    padding-right: 27.5%;
     margin: 0;
+    margin-left: 5%;
 }
 
 .jobTitle {
     color: #D0BDF4;
     text-transform: none;
-    padding-left: 15%;
-    padding-right: 17.5%;
     margin: 0;
     margin-top: 0;
 }
@@ -35,7 +32,6 @@ body {
 .company {
     color: #D0BDF4;
     text-transform: none;
-    padding-left: 15%;
     margin: 0;
     margin-top: 2vh;
 }
@@ -43,6 +39,23 @@ body {
 .location {
     color: #E5EAF5;
     text-transform: none;
-    padding-right: 17.5%;
     margin: 0;
+}
+
+.date {
+    color: #A0D2EB;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid-job {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: 0;
+}
+
+.experience-content {
+    margin-left: 15%;
+    margin-right: 17.5%;
 }
