@@ -64,3 +64,12 @@
     border-top-right-radius: 20px; /* Rounded top-right corner */
     border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
 }
+
+.drop-down-text {
+    color: #494D5F;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}

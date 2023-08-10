@@ -8,6 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import CheckIcon from '@mui/icons-material/Check';
+import ListItemIcon from '@mui/material/ListItemIcon';
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
 import './PopUpEmail.css';
@@ -47,10 +50,16 @@ function PopUpEmail({ isOpen, setIsOpen }) {
 
     const [anchorEl, setAnchorEl] = useState(null);
     const [gmail, setGmail] = useState(true)
+    const [selectedOption, setSelectedOption] = useState('Gmail');
     const open = Boolean(anchorEl);
 
     const openDropDown = (event) => {
       setAnchorEl(event.currentTarget);
+    };
+
+    const handleMenuClick = (option) => {
+      setSelectedOption(option);
+      closeDropDown();
     };
 
     const closeDropDown = () => {
@@ -83,8 +92,22 @@ function PopUpEmail({ isOpen, setIsOpen }) {
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
           >
-            <MenuItem onClick={() => { setGmail(true) }}>Gmail</MenuItem>
-            <MenuItem onClick={() => { setGmail(false) }}>Outlook</MenuItem>
+            <MenuItem onClick={() => { handleMenuClick('Gmail') }}>
+              Gmail
+              {selectedOption === 'Gmail' && (
+                <ListItemIcon>
+                  <CheckIcon fontSize="small" />
+                </ListItemIcon>
+              )}
+            </MenuItem>
+            <MenuItem onClick={() => { handleMenuClick('Outlook') }}>
+              Outlook
+              {selectedOption === 'Outlook' && (
+                <ListItemIcon>
+                  <CheckIcon fontSize="small" />
+                </ListItemIcon>
+              )}
+            </MenuItem>
           </Menu>
         </div>
       </ReactModal>
