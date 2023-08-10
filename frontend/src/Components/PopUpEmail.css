@@ -38,12 +38,7 @@
     width: calc(100% - 5px);
     font-family: inherit;
     resize: none;
-    height: calc(100% - 80px);
-}
-
-.rounded-button-container {
-    display: flex;
-    align-items: center;
+    height: calc(100% - 90px);
 }
 
 .rounded-button {
@@ -53,6 +48,7 @@
     border: none;
     border-top-left-radius: 20px; /* Rounded top-left corner */
     border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+    margin-top: 20px;
 }
 
 .small-rounded-button {
@@ -63,6 +59,7 @@
     margin-left: 1px;
     border-top-right-radius: 20px; /* Rounded top-right corner */
     border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+    margin-top: 20px;
 }
 
 .drop-down-text {

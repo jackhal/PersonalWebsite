@@ -94,37 +94,35 @@ function PopUpEmail({ isOpen, setIsOpen }) {
 
         <input type="text" class="subject-input" id="subjectField" placeholder="Subject" onChange={() => { handleSubject() }} />
         <textarea type="text" class="content-input" id="bodyField" placeholder="Content" onChange={() => { handleBody() }} />
-        <div class="oval-button-container">
-          <button class="rounded-button" onClick={() => { handleSend() }}>Send</button>
-          <IconButton disableRipple='true' class="small-rounded-button" onClick={openDropDown}>
-            <PlayArrowIcon style={{ transform: 'rotate(90deg)', marginTop: '2px'}} fontSize="small" />
-          </IconButton>
-          <Menu
-            anchorEl={anchorEl}
-            open={open}
-            onClose={closeDropDown}
-            onClick={closeDropDown}
-            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-          >
-            <MenuItem onClick={() => { handleMenuClick('Gmail') }}>
-              Gmail
-              {selectedOption === 'Gmail' && (
-                <ListItemIcon>
-                  <CheckIcon fontSize="small" />
-                </ListItemIcon>
-              )}
-            </MenuItem>
-            <MenuItem onClick={() => { handleMenuClick('Outlook') }}>
-              Outlook
-              {selectedOption === 'Outlook' && (
-                <ListItemIcon>
-                  <CheckIcon fontSize="small" />
-                </ListItemIcon>
-              )}
-            </MenuItem>
-          </Menu>
-        </div>
+        <button class="rounded-button" onClick={() => { handleSend() }}>Send</button>
+        <IconButton disableRipple='true' class="small-rounded-button" onClick={openDropDown}>
+          <PlayArrowIcon style={{ transform: 'rotate(90deg)', marginTop: '2px'}} fontSize="small" />
+        </IconButton>
+        <Menu
+          anchorEl={anchorEl}
+          open={open}
+          onClose={closeDropDown}
+          onClick={closeDropDown}
+          transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+          anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+        >
+          <MenuItem onClick={() => { handleMenuClick('Gmail') }}>
+            Gmail
+            {selectedOption === 'Gmail' && (
+              <ListItemIcon>
+                <CheckIcon fontSize="small" />
+              </ListItemIcon>
+            )}
+          </MenuItem>
+          <MenuItem onClick={() => { handleMenuClick('Outlook') }}>
+            Outlook
+            {selectedOption === 'Outlook' && (
+              <ListItemIcon>
+                <CheckIcon fontSize="small" />
+              </ListItemIcon>
+            )}
+          </MenuItem>
+        </Menu>
       </ReactModal>
     );
 }
