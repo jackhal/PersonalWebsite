@@ -64,3 +64,11 @@
     top: 0;
     border-radius: 10px;
 }
+
+.resume-header {
+  color: #D0BDF4;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
