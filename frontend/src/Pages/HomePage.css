@@ -4,27 +4,27 @@ body {
 
 .introduction {
     color: #A0D2EB;
-    font-size: 2vw;
+    font-size: 36px;
 }
 
 .home-name {
     color: #D0BDF4;
-    font-size: 6vw;
+    font-size: 82px;
 }
 
 .subtitle {
     color: #E5EAF5;
-    font-size: 3.5vw;
+    font-size: 48px;
 }
 
 .mini-bio {
     color: #E5EAF5;
-    font-size: 1.25vw;
+    font-size: 18px;
 }
 
 .contact-message {
     color: #D0BDF4;
-    font-size: 1.25vw;
+    font-size: 18px;
 }
 
 .introduction, .home-name, .subtitle, .mini-bio, .contact-message {
