@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { HeaderContext } from "../Contexts/HeaderContext.js";
 import { FooterContext } from "../Contexts/FooterContext.js";
+import PDFViewer from "../Components/PDFViewer.js";
 import './ResumePage.css';
 
 export default function ResumePage() {
@@ -26,7 +27,7 @@ export default function ResumePage() {
             <a href="/downloads/JackHale_Resume.pdf" download>
                 <button class="button-85" role="button">Download</button>
             </a>
-            <embed src={process.env.PUBLIC_URL + '/downloads/JackHale_Resume.pdf'} type="application/pdf" width="100%" height="80%" />
+            <PDFViewer url={process.env.PUBLIC_URL + '/downloads/JackHale_Resume.pdf'} />
         </div>
     );
 }
