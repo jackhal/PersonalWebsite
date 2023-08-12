@@ -23,11 +23,18 @@ export default function ResumePage() {
 
     return (
         <div style={resumePageContent}>
-            <p class="resume-header">My Resume</p>
-            <a href="/downloads/JackHale_Resume.pdf" download>
-                <button class="button-85" role="button">Download</button>
-            </a>
-            <PDFViewer url={process.env.PUBLIC_URL + '/downloads/JackHale_Resume.pdf'} />
+            <div class="header-button-container">
+                <span class="spacer"></span>
+                <span class="resume-header">Resume</span>
+                <a href="/downloads/JackHale_Resume.pdf" download class="download-button">
+                    <Button variant="outlined" sx={{ borderColor: '#D0BDF4' }} >
+                        <p class="footer-button-text">Download</p>
+                    </Button>
+                </a>
+            </div>
+            <div class="embed-parent">
+                <embed class="embed-content" src={process.env.PUBLIC_URL + '/images/JackHale_Resume.jpg'} type="image/jpg" />
+            </div>
         </div>
     );
 }

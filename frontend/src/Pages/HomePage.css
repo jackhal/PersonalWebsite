@@ -32,3 +32,31 @@ body {
     margin-left: 17.5%;
     margin-right: 27.5%;
 }
+
+@media (max-width: 400px){
+    .introduction, .home-name, .subtitle, .mini-bio, .contact-message {
+        margin: 0;
+        margin-left: 12.5%;
+        margin-right: 15%;
+    }
+    
+    .introduction {
+        font-size: 24px;
+    }
+
+    .home-name {
+        font-size: 54px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    .mini-bio {
+        font-size: 13px;
+    }
+
+    .contact-message {
+        font-size: 13px;
+    }
+}

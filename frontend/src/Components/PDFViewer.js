@@ -17,7 +17,7 @@ function PDFViewer({ url }) {
     }
 
     pdf && pdf.getPage(pageNum).then(function (page) {
-      const viewport = page.getViewport({ scale: 1.5 });
+      const viewport = page.getViewport({ scale: 1.25 });
       const canvas = canvasRef.current;
       canvas.height = viewport.height;
       canvas.width = viewport.width;
