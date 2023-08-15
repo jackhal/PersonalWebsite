@@ -23,7 +23,7 @@ export default function ExperiencePage() {
             <div class="experience-content">
                 <p class="experience-header">Experience</p>
                 <div class="grid-job">
-                    <p>
+                    <p class="job-location">
                         <span class="company">Baylor University,{'\u00A0'}</span>
                         <span class="location">Waco, TX</span>
                     </p>
@@ -36,7 +36,7 @@ export default function ExperiencePage() {
                 <p class="text">● Wrote SAR for Microservice Systems Using GraalVM Native Image which was submitted to ASE 2023</p>
                 
                 <div class="grid-job">
-                    <p>
+                    <p class="job-location">
                         <span class="company">Omni Interactions,{'\u00A0'}</span>
                         <span class="location">Denver, CO</span>
                     </p>
@@ -48,7 +48,7 @@ export default function ExperiencePage() {
                 <p class="text">● Focused on ease of use, clarity, and a streamlined experience for applicants to increase yield</p>
 
                 <div class="grid-job">
-                    <p>
+                    <p class="job-location">
                         <span class="company">Everlane,{'\u00A0'}</span>
                         <span class="location">Menlo Park, CA</span>
                     </p>
@@ -59,7 +59,7 @@ export default function ExperiencePage() {
                 <p class="text">● Assisted a change in management by supervising and training new hires</p>
 
                 <div class="grid-job">
-                    <p>
+                    <p class="job-location">
                         <span class="company">In-N-Out Burger,{'\u00A0'}</span>
                         <span class="location">San Carlos, CA</span>
                     </p>

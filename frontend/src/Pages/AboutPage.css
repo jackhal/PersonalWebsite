@@ -104,3 +104,15 @@ body {
     margin: 0;
     margin-top: 0.5vh;
 }
+
+@media (max-width: 470px){
+    .grid-tech {
+        grid-template-columns: 100%;
+    }
+
+    .about-header {
+        text-align: left;
+        font-size: 250%;
+        margin-left: 12.5%;
+    }
+}

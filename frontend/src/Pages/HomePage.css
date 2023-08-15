@@ -60,3 +60,31 @@ body {
         font-size: 13px;
     }
 }
+
+@media (max-width: 750px){
+    .introduction, .home-name, .subtitle, .mini-bio, .contact-message {
+        margin: 0;
+        margin-left: 12.5%;
+        margin-right: 15%;
+    }
+
+    .introduction {
+        font-size: 28px;
+    }
+
+    .home-name {
+        font-size: 54px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    .mini-bio {
+        font-size: 13px;
+    }
+
+    .contact-message {
+        font-size: 13px;
+    }
+}

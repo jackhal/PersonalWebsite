@@ -46,11 +46,12 @@ p,.company, .location {
     color: #A0D2EB;
     display: flex;
     justify-content: flex-end;
+    margin-top: 0;
 }
 
 .grid-job {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     width: 100%;
     margin: 0;
 }
@@ -58,4 +59,30 @@ p,.company, .location {
 .experience-content {
     margin-left: 15%;
     margin-right: 17.5%;
+}
+
+@media (max-width: 710px){
+    .grid-job {
+        grid-template-columns: 100%;
+    }
+
+    .date {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 375px){
+    .job-location {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .experience-header {
+        text-align: left;
+        margin-left: -4px;
+        font-size: 250%;
+    }
 }
