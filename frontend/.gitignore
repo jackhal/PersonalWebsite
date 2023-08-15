@@ -2,4 +2,4 @@
 package-lock.json
 package.json
 /build
-./src/index.js
+/src/index.js
