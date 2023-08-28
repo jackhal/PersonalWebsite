@@ -53,6 +53,7 @@ p,.company, .location {
     display: grid;
     grid-template-columns: 60% 40%;
     width: 100%;
+    align-items: baseline;
     margin: 0;
 }
 
